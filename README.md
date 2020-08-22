@@ -8,8 +8,8 @@ command for running:
 
 how to use:  
 Please enter English sentences.
-If you push the "analyze" button, you can find all verb instances by list on the console and color label.
-It finds past simple, past progressive, and past perfect.
+If you push the "analyze" button, you can find all past tense verbs by list on the console and color label.
+It finds regular verb and irregular verb.
 
 Please install:  
 - Python  
