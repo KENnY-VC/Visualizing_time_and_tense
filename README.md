@@ -4,7 +4,7 @@ Member:
 s1250124 Kentaro Yumita
 
 command for running:  
-'python Unit8_s1250124.py'
+`python Unit8_s1250124.py`
 
 how to use:  
 Please enter English sentences.
