@@ -57,8 +57,8 @@ def updateText():
   while i<len(pos):
     word = pos[i][0]
     tag = pos[i][1]
-    
-    # past simple tense
+
+    # past tense verb
     if tag == 'VBD':
       match = re.search('ed$',word)
       color = '#ffffff'
@@ -108,14 +108,23 @@ root.title('Unit 7 Activity 6: Problem solving: NLTK pipeline in Python')
 # making widget
 frame1 = ttk.Frame(root, padding=16)
 
-label1 = Label(frame1, text='Please enter English sentence.')
+label1 = Label(frame1, text='Past tense colorizer')
 label2 = Label(frame1, text='')
-label2_0 = Label(label2, text='Past Simple(Regular form)', bg='#ffffaa')
-label2_1 = Label(label2, text='Past Simple(Irregular form)', bg='#aaffaa')
+label2_0 = Label(label2, text='Regular form', bg='#ffffaa')
+label2_1 = Label(label2, text='Irregular form', bg='#aaffaa')
 message1 = Message(frame1, text='', width=500, relief='sunken')
 
 t = StringVar()
-txt = 'Two frogs, a father and his son, accidently fell into a bucket of milk. They started swimming for their lives. They swam for a long time, but there seemed no hope of their getting out. The father soon gave up and drowned. The son carried on swimming. During this time, the milk had begun to form a ball of butter. Using this island of butter as a platform, he managed to hop out of the bucket.'
+txt = "I don't speak Japanese.\n" \
++ "I worked for Microsoft.\n" \
++ "We will eat in ten minutes.\n" \
++ "He is studying to become a dentist.\n" \
++ "Yesterday evening we were watching the game so we couldn't come.\n" \
++ "It will be raining the entire week.\n" \
++ "I have been to Tokyo.\n" \
++ "I lost so much weight because I had begun exercising.\n" \
++ "She will have gotten ready by the time they leave the house.\n" \
++ "They read the book."
 textbox1 = Text(frame1, height=10, width=70, wrap=WORD)
 textbox1.insert(1.0, txt)
 
